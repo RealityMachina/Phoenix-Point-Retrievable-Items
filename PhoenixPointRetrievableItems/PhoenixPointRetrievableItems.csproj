@@ -42,6 +42,10 @@
       <HintPath>I:\Epic Games\PhoenixPoint\PhoenixPointWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="PhoenixPointModLoader">
+      <HintPath>I:\Epic Games\PhoenixPoint\PhoenixPointWin64_Data\Managed\PhoenixPointModLoader.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,6 +57,9 @@
   <ItemGroup>
     <Compile Include="RetrievableItems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="unlicense.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

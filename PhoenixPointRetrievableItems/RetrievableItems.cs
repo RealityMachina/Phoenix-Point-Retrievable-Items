@@ -6,11 +6,15 @@ using Harmony;
 using System.Reflection;
 using PhoenixPoint.Tactical.Entities.Abilities;
 using PhoenixPoint.Tactical.Entities.Equipments;
+using PhoenixPointModLoader;
+
 namespace PhoenixPointRetrievableItems
 {
-    public class RetrievableItems
+    public class RetrievableItems : IPhoenixPointMod
     {
-        public static void Init()
+        public ModLoadPriority Priority => ModLoadPriority.Normal;
+
+        public void Initialize()
         {
             var harmony = HarmonyInstance.Create("io.github.realitymachina.retrievableitems");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
