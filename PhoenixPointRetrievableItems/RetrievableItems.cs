@@ -7,6 +7,7 @@ using System.Reflection;
 using PhoenixPoint.Tactical.Entities.Abilities;
 using PhoenixPoint.Tactical.Entities.Equipments;
 using PhoenixPointModLoader;
+using PhoenixPointModLoader.Manager;
 
 namespace PhoenixPointRetrievableItems
 {
